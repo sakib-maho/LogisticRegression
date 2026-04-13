@@ -1,13 +1,41 @@
-# LogisticRegression
+# Logistic Regression Showcase
 
-## Description
-LogisticRegression - A project by sakib-maho
+This repository has been upgraded into a reproducible logistic regression mini-project.
+The notebook remains available, while a clean Python package and CLI provide scriptable training workflows.
+
+## Features
+
+- Lightweight logistic regression implementation (gradient descent)
+- CSV dataset loader with `label` target column
+- CLI for training and evaluating model accuracy
+- Unit tests for model behavior and CLI output
+- Sample dataset for quick experimentation
+
+## Quick Start
+
+```bash
+python3 cli.py --data data/sample_binary.csv --epochs 400 --learning-rate 0.1
+```
+
+## Run Tests
+
+```bash
+python3 -m unittest discover -s tests -p "test_*.py"
+```
+
+## Project Structure
+
+```text
+LogisticRegression/
+├── LogisticRegression.ipynb
+├── cli.py
+├── logistic_regression/
+│   ├── dataset.py
+│   └── model.py
+├── data/sample_binary.csv
+└── tests/test_model.py
+```
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Author
-sakib-maho
-
-## Copyright
-Copyright (c) 2025 sakib-maho
+MIT License. See `LICENSE`.
