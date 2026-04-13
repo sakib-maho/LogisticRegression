@@ -24,11 +24,15 @@ The notebook remains available, while a clean Python package and CLI provide scr
 python3 cli.py --data data/sample_binary.csv --epochs 400 --learning-rate 0.1
 ```
 
-## Run Tests
+## Tests
 
 ```bash
 python3 -m unittest discover -s tests -p "test_*.py"
 ```
+
+## License
+
+MIT License. See `LICENSE`.
 
 ## Project Structure
 
@@ -42,7 +46,3 @@ LogisticRegression/
 ├── data/sample_binary.csv
 └── tests/test_model.py
 ```
-
-## License
-
-MIT License. See `LICENSE`.
